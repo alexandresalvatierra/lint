@@ -1,0 +1,8 @@
+const configDefault = require('./configs/default')
+const configTypescript = require('./configs/typescript')
+const ignores = require('./ignores')
+
+module.exports = {
+  ignores,
+  configs: [configDefault, ...configTypescript],
+}
